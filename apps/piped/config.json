@@ -1,0 +1,23 @@
+me": "Piped",
+  "id": "piped",
+    "version": "1.0.0",
+      "description": "Privacy-focused YouTube frontend",
+        "short_desc": "Ad-free YouTube client",
+	  "author": "Team Piped",
+	    "source": "https://github.com/TeamPiped/Piped",
+	      "form_fields": [
+		          {
+				        "type": "text",
+					      "label": "Web Port",
+					            "required": true,
+						          "env_variable": "PIPED_PORT",
+							        "default": "8090"
+								    },
+								        {
+										      "type": "password",
+										            "label": "Database Password",
+											          "required": true,
+												        "env_variable": "DB_PASSWORD"
+													    }
+													      ]
+													      }
