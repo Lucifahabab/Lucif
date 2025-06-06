@@ -1,0 +1,45 @@
+{
+	  "$schema": "https://raw.githubusercontent.com/meienberger/runtipi/master/apps/app-info.schema.json",
+	    "id": "piped",
+	      "name": "Piped",
+	        "port": 3000,
+		  "available": true,
+		    "exposable": true,
+		      "dynamic_config": false,
+		        "version": "latest",
+			  "tipi_version": 18,
+			    "categories": ["media"],
+			      "description": "Privacy-friendly YouTube frontend",
+			        "short_desc": "Privacy-focused YouTube front-end",
+				  "author": "TeamPiped",
+				    "source": "https://github.com/TeamPiped/Piped",
+				      "form_fields": [
+					          {
+							        "type": "text",
+								      "label": "Piped API URL",
+								            "hint": "Default: https://pipedapi.kavin.rocks",
+									          "required": false,
+										        "env_variable": "INSTANCE_URL",
+											      "defaultValue": "https://pipedapi.kavin.rocks"
+											          },
+												      {
+													            "type": "text",
+														          "label": "Proxy URL",
+															        "required": false,
+																      "env_variable": "PROXY_URL"
+																          },
+																	      {
+																		            "type": "boolean",
+																			          "label": "Enable Avatars",
+																				        "defaultValue": true,
+																					      "env_variable": "ENABLE_AVATARS"
+																					          },
+																						      {
+																							            "type": "boolean",
+																								          "label": "Proxy Downloads",
+																									        "defaultValue": false,
+																										      "env_variable": "ENABLE_PROXY_DOWNLOAD"
+																										          }
+																											    ],
+																											      "supported_architectures": ["arm64", "amd64"]
+}
